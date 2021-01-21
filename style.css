@@ -1,0 +1,234 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+    float:left;
+    padding: 20px 30px 20px 20px;
+}
+
+.nav li{
+    list-style: none;
+    float: left;
+    padding: 25px 30px 20px 20px;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.DataProvinsi{
+    text-decoration: none;
+    color: black;
+}
+
+
+.urgent li{
+    list-style: none;
+    float: right;
+    padding: 25px 30px 10px 20px;
+}
+
+.remove{
+    clear: both;
+}
+
+#container-body{
+    background-color: lightsteelblue;
+    height: auto;
+}
+
+#container-input{
+    background-color: lightsteelblue;
+}
+
+
+.container-body .header{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container-body .subheader{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* BOX */
+.container-1{
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px gray;
+}
+
+.kasus{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px gray;
+    margin-top: 50px;
+}
+
+.kasus{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px gray;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.kasus{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px gray;
+    /* float: left; */
+    margin-top: 50px;
+}
+
+.container-pembatas{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;    
+}
+
+
+#text0, #text1, #text2, #text3{
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.totalCase, .positive, .recovered, .death{
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+    .urgent li{
+        display: none;
+    }
+    .container-body .header{
+        font-size: 23px;
+    }
+    .container-body .subheader{
+        font-size: 23px;
+    }
+
+    .container-pembatas{
+        flex-direction: column;
+    }
+
+    .skill{
+        text-align: center;
+    }
+}
+
+
+.home{
+    text-decoration: none;
+    color: black;
+}
+
+.search{
+    float: right;
+    margin: 40px 30px;
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.content{
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#container-body{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    height: 5450px;
+    background-color: lightsteelblue;
+}
+
+.province{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+hr{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content{
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    padding: 0 80px;
+}
+
+.provinceall{
+    font-size: 20px;
+}
+
+.positiveProvince,.recoveredProvince,.deathProvince{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 2000px) {
+    #container-body{
+        display: block;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content{
+        width: 200px;
+    }
+
+    .province{
+        font-size: 20px;
+    }
+
+    .positiveProvince{
+        font-size: 18px;
+    }
+
+    .recoveredProvince{
+        font-size: 18px;
+    }
+
+    .deathProvince{
+        font-size: 18px;
+    }
+}
