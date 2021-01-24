@@ -40,10 +40,6 @@ body{
     clear: both;
 }
 
-#container-body{
-    background-color: lightsteelblue;
-    height: auto;
-}
 
 #container-input{
     background-color: lightsteelblue;
@@ -101,7 +97,6 @@ body{
     background-color: white;
     border-radius: 10px;
     box-shadow:5px 5px 10px gray;
-    /* float: left; */
     margin-top: 50px;
 }
 
@@ -123,26 +118,6 @@ body{
     font-size: 25px;
 }
 
-@media only screen and (max-width: 900px) {
-    .urgent li{
-        display: none;
-    }
-    .container-body .header{
-        font-size: 23px;
-    }
-    .container-body .subheader{
-        font-size: 23px;
-    }
-
-    .container-pembatas{
-        flex-direction: column;
-    }
-
-    .skill{
-        text-align: center;
-    }
-}
-
 
 .home{
     text-decoration: none;
@@ -162,15 +137,15 @@ body{
     width: 500px;
     height: 250px;
     border-radius: 10px;
-    margin-left: 50px;
+    margin-left: 50px;  
     margin-bottom: 50px;
 }
 
 #container-body{
     display: inline-block;
-    width: auto;
+    width: 0 auto;
     position: relative;
-    height: 5450px;
+    height: auto;
     background-color: lightsteelblue;
 }
 
@@ -203,6 +178,78 @@ hr{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 900px) {
+    .urgent li{
+        display: none;
+    }
+    .container-body .header{
+        font-size: 23px;
+    }
+    .container-body .subheader{
+        font-size: 23px;
+    }
+
+    .container-body{
+        height: 1000px;
+        margin: 0;
+    }
+
+    .container-pembatas{    
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill{
+        text-align: center;
+    }
+
+    .container-1{
+        width: fit-content;
+
+    }
+
+    .content{
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .title{
+        font-size: 18px;
+        width: auto;
+    }
+
+    .nav li{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .container-body{
+        width: auto;
+    }
+}
+
+@media only screen and (max-height: 568px){
+    .nav li{
+        font-size: 11px;
+        margin-left: -10px;
+    }
+
+    #keyword{
+        width: 250px;
+    }
+
+    .content{
+        width: 150px !important;
+    }
+}
+
+@media only screen and (max-height: 812px){
+    .search{
+        width: 300px;
+    }
+}
+
 
 @media only screen and (max-width: 2000px) {
     #container-body{
@@ -231,4 +278,42 @@ hr{
     .deathProvince{
         font-size: 18px;
     }
+
+@media only screen and (max-width: 280px){
+    .nav li{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .search{
+        width: 200px;
+    }
+
+    .content{
+        width: 100px;
+        height: 300px;
+    }
+
+    .positiveProvince,.recoveredProvince,.deathProvince{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .provinceall{
+        font-size: 15px;
+    }
+
+    .container-1{
+        width: 280px;
+    }
+
+    #text0{
+        font-size: 34px;
+    }
+
+}
 }
